@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зоомагазин</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&subset=cyrillic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body> 
+    <header>
+    <div class="contact-info">
+    <div class="contact-i">
+        <img src="../images/icon/telephone.ico" alt="Phone Icon" class="icon" />
+        <span>+379 871-8371</span>
+    </div>
+    <div class="contact-it">
+        <img src="../images/icon/email.ico" alt="Email Icon" class="icon" />
+        <span>rgarton@outlook.com</span>
+    </div>
+    <div class="contact-items">
+        <img src="../images/icon/placeholder.ico" alt="Location Icon" class="icon" />
+        <span>8592 Ярмаркова площа вул.Таллахассі, FL 32303</span>
+    </div>
+</div>
+<nav class="nav-menu">
+    <div class="logo">
+        <img src="../images/icon/logo.ico" alt="Paw Icon" class="logo-icon" />
+        <span class="logo-text">Pet Shop</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="../index.html">Головна</a></li>
+        <li><a href="../pages/shop.html">Каталог</a></li>
+        <li><a href="../pages/blog.html">Про нас</a></li>
+        <li><a href="../pages/contact.html">Контакти</a></li>
+    </ul>
+    <div class="search-cart">
+        <div class="search-bar" id="searchBtn">
+            <input type="text" placeholder="Пошук..." />
+            <button>
+                <img src="../images/icon/search.ico" alt="Search Icon" class="icon" />
+            </button>
+        </div>
+        <div class="cart-icon">
+            <a href="../pages/cart.html"><img src="../images/icon/cart.ico" alt="Cart" class="cart"></a>
+            <span id="cart-count">0</span>
+        </div>
+        <div class="wishlist-ic">
+           <a href="../pages/wishlist.html"><img src="../images/icon/wishlist.ico" alt="Wishlist" class="wishlist" /></a>
+            <span id="wishlist-count">0</span>
+        </div>
+        <div class="sign">
+            <a href="../pages/registration.html"><img src="../images/icon/human.ico" alt="sign" class="icon"></a>
+        </div> 
+        
+        </div>
+</nav>
+    <header>
+
+        <div class="burger">
+            <div id="burger" class="burger-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        
+        <div id="side-menu" class="menu">
+            <img src="../images/icon/close.ico"alt="Close" class="close-burger" id="close-icon">
+            <div class="menu-extras">
+                <div class="cart-icon">
+                   <a href="../pages/cart.html"><img src="../images/icon/cart.ico" alt="Cart" class="cart"></a>
+                    <span id="cart-count">0</span>
+                </div>
+                <div class="sign">
+                    <a href="page/registration.html"><img src="../images/icon/human.ico" alt="Sign" class="icon"></a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="../shop/shop.html">Каталог</a></li>
+                <li><a href="../pages/blog.html">Про нас</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>  
+        </div>
+        
+    </header>
+
+    <section class="promo-section">
+        <img src="../images/logo/HamsterLogo.webp" alt="Pet Shop Promo" class="promo-imaGe">
+        <div class="promo-content">
+            <p class="pe">Pet Shop</p>
+            <h1>Доброзичливий і торботливий зоомагазин</h1>
+            <p>Ми подбаємо про щастя Ваших улюбленців</p>
+        </div>
+    </section>
+    <div class="contacT-container">
+        <div class="contact-form">
+            <h2>Наші контакти</h2>
+            <form>
+                <div class="form-group">
+                    <div class="InputName">
+                        <label class="nameL" for="first-name">Ім'я</label>
+                        <input class="nameInput" type="text" id="first-name" placeholder="Ім'я">
+                    </div>
+                    <div>
+                        <label for="last-name">Прізвище</label>
+                        <input type="text" id="last-name" placeholder="Прізвище">
+                    </div>
+                </div>
+                <div class="eMail">
+                    <label for="email">Електронна пошта</label>
+                    <input type="email"  placeholder="@gmail.com">
+                </div>
+                <div class="Mess">
+                    <label for="message">Повідомлення</label>
+                    <textarea id="message" placeholder="Веддіть текст..."></textarea>
+                </div>
+                <button type="submit" class="send-button">Відправити</button>
+            </form>
+        </div>
+        <div class="contact-InFo">
+            <h2>Не соромтесь звернутись до нас!</h2>
+            <p>Відповідимо на будь-які Ваші запитання, зробимо все для Вашого комфорту. </p>
+            <ul>
+                <li><span>
+                    <img src="../images/icon/placeholder.ico" class="icon">
+                </span> 8592 Ярмаркова площа вул.Таллахассі, FL 32303</li>
+                <li><span>
+                    <img src="../images/icon/email.ico" class="icon">
+                </span> rgarton@outlook.com</li>
+                <li><span>
+                    <img src="../images/icon/telephone.ico" class="icon">
+                </span> +775 378-6348</li>
+                <li><span>
+                    <img src="../images/icon/clock.ico" class="icon">
+                </span> Пн - Пт: 10:00 - 21:00</li>
+            </ul>
+        </div>
+    </div>
+    
+   <div class="map-container">
+    <div class="map" id="map"></div>
+</div>
+
+    <footer style="background: url('../images/logo/backround_end.webp') no-repeat center center / cover;">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../images/icon/logo.ico" alt="Pet Shop Logo" class="logo" />
+                <span class="logo-text">Pet Shop</span>
+                <p>Дбаємо про Ваших улюбленців та їх затишок. Обирайте їхні мрії в нашому магазині!</p>
+                <div class="social-icons">
+                    <img src="../images/icon/facebook.ico" alt="Facebook" />
+                    <img src="../images/icon/instagram.ico" alt="Instagram" />
+                    <img src="../images/icon/Twitter.ico" alt="Twitter" />
+                    <img src="../images/icon/YouTube.ico" alt="YouTube" />
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Компанія</h3>
+                    <ul>
+                        <li><a href="#about">Про нас</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Подарункові картки</a></li>
+                        <li><a href="#">Кар'єра</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Корисні посилання</h3>
+                    <ul>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Хіт продажу</a></li>
+                        <li><a href="#">Знижки</a></li>
+                        <li><a href="#">F.A.Q</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Обслуговування</h3>
+                    <ul>
+                        <li><a href="#">Контаки</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Повернення</a></li>
+                        <li><a href="#">Відстежити замовлення</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Контакти</h3>
+                    <p>8592 Ярмаркова площа вул.Таллахассі, FL 32303</p>
+                    <p>+775 378-6348</p>
+                    <p>rgarton@outlook.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Copyright Pet Shop 2024. Design by Figma.guru</p>
+            <div class="payment-icons">
+                <img src="../images/icon/Visa.ico" alt="Visa" />
+                <img src="../images/icon/ae.ico" alt="American Express" />
+                <img src="../images/icon/MasterCard.ico" alt="MasterCard" />
+                <img src="../images/icon/PayPal.ico" alt="PayPal" />
+            </div>
+        </div>
+    </footer>
+    <script src="../sriptpages/scriptIndex.js"></script>
+    <script src="../sriptpages/scriptContact.js"></script>
+</body>
+</html>

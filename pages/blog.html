@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зоомагазин</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&subset=cyrillic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contact-info">
+            <div class="contact-i">
+                <img src="../images/icon/telephone.ico" alt="Phone Icon" class="icon" />
+                <span>+379 871-8371</span>
+            </div>
+            <div class="contact-it">
+                <img src="../images/icon/email.ico" alt="Email Icon" class="icon" />
+                <span>rgarton@outlook.com</span>
+            </div>
+            <div class="contact-items">
+                <img src="../images/icon/placeholder.ico" alt="Location Icon" class="icon" />
+                <span>8592 Ярмаркова площа вул.Таллахассі, FL 32303</span>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <div class="logo">
+                <img src="../images/icon/logo.ico" alt="Paw Icon" class="logo-icon" />
+                <span class="logo-text">Pet Shop</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="../pages/shop.html">Каталог</a></li>
+                <li><a href="../pages/blog.html">Про нас</a></li>
+                <li><a href="../pages/contact.html">Контакти</a></li>
+            </ul>
+            <div class="search-cart">
+                <div class="search">
+                    <div class="search-bar" id="searchBtn">
+                        <input type="text" id="searchInput" placeholder="Пошук..." />
+                        <button type="submit" id="searchBtn">
+                        <img src="../images/icon/search.ico" alt="Search Icon" class="icon" />
+                        </button>
+                    </div>
+                    <div class="white-block">
+                        <div id="results" class="result"></div>
+                    </div>
+                </div>
+
+
+                <div class="cart-icon">
+                  <a href="../pages/cart.html"><img src="../images/icon/cart.ico" alt="Cart" class="cart"></a>
+                    <span id="cart-count">0</span>
+                </div>
+                <div class="wishlist-ic">
+                   <a href="../pages/wishlist.html"><img src="../images/icon/wishlist.ico" alt="Wishlist" class="wishlist" /></a>
+                    <span id="wishlist-count">0</span>
+                </div>
+                <div class="sign">
+                    <a href="../pages/registration.html"><img src="../images/icon/human.ico" alt="sign" class="icon"></a>
+                </div> 
+                
+                </div>
+        </nav>
+        <div class="burger">
+            <div id="burger" class="burger-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        
+        <div id="side-menu" class="menu">
+            <img src="../images/icon/close.ico" alt="Close" class="close-burger" id="close-icon">
+            <div class="menu-extras">
+                <div class="cart-icon">
+                    <img src="../images/icon/cart.ico" alt="Cart" class="cart">
+                    <span id="cart-count">0</span>
+                </div>
+                <div class="sign">
+                    <a href="pages/registration.html"><img src="../images/icon/human.ico" alt="Sign" class="icon"></a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="../pages/shop.html">Каталог</a></li>
+                <li><a href="../pages/blog.html">Про нас</a></li>
+                <li><a href="../pages/contact.html">Контакти</a></li>
+            </ul>
+            
+        </div>
+        
+    </header> 
+
+<main class="blog-content">
+    <section class="blog-section">
+        <div class="blog-text">
+            <h1>Наша місія — щастя тварин</h1>
+            <p>У Pet Shop ми віримо, що кожен улюбленець заслуговує на турботу, якісні товари та любов. Ми створили наш магазин, щоб зробити життя тварин комфортнішим, а життя їх господарів — зручнішим.</p>
+        </div>
+        <div class="blog-image">
+            <img src="../images/team/teamPet.jpg" alt="">
+        </div>
+    </section>
+   <section class="founder-section">
+    <div class="founder-container">
+        <div class="founder-photo">
+            <img src="../images/team/people4.jpg" alt="Засновниця">
+        </div>
+        <div class="founder-text">
+            <h2>Наша засновниця</h2>
+            <p>Олена — засновниця нашого закладу. Вона присвятила своє життя допомозі тваринам і створила місце, де кожен хвостик отримує турботу, любов і професійний догляд.</p>
+            <p>З багаторічним досвідом у ветеринарії та величезною пристрастю до тварин, вона надихає команду на щоденну турботу та розвиток.</p>
+        </div>
+    </div>
+</section>
+
+   </section>
+   <section class="team-section">
+    <h2>Наша команда</h2>
+    <div class="team-gallery">
+        <div class="team-member">
+            <a href="https://www.instagram.com/iryna" target="_blank">
+                <img src="../images/team/people 2.jpg" alt="Ірина">
+            </a>
+            <p>Ірина, ветеринар</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.instagram.com/andrii" target="_blank">
+                <img src="../images/team/people 1.jpg" alt="Андрій">
+            </a>
+            <p>Андрій, кінолог</p>
+        </div>
+
+        <div class="team-member">
+            <a href="https://www.instagram.com/serhii" target="_blank">
+                <img src="../images/team/people 3.jpg" alt="Сергій">
+            </a>
+            <p>Сергій, менеджер</p>
+        </div>
+    </div>
+</section>
+
+    <section class="video-section">
+        <h2>Подивіться, як ми працюємо</h2>
+        <video controls width="50%" poster="../images/video/preview.jpg">
+            <source src="../images/video/petwork.mp4" type="video/mp4">
+            Ваш браузер не підтримує відео.
+        </video>
+    </section>
+    
+</main>
+
+<footer style="background: url('images/logo/backround_end.webp') no-repeat center center / cover;">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../images/icon/logo.ico" alt="Pet Shop Logo" class="logo" />
+                <span class="logo-text">Pet Shop</span>
+                <p>Дбаємо про Ваших улюбленців та їх затишок. Обирайте їхні мрії в нашому магазині!</p>
+                <div class="social-icons">
+                    <img src="../images/icon/facebook.ico" alt="Facebook" />
+                    <img src="../images/icon/instagram.ico" alt="Instagram" />
+                    <img src="../images/icon/Twitter.ico" alt="Twitter" />
+                    <img src="../images/icon/YouTube.ico" alt="YouTube" />
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Компанія</h3>
+                    <ul>
+                        <li><a href="#about">Про нас</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Подарункові картки</a></li>
+                        <li><a href="#">Кар'єра</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Корисні посилання</h3>
+                    <ul>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Хіт продажу</a></li>
+                        <li><a href="#">Знижки</a></li>
+                        <li><a href="#">F.A.Q</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Обслуговування</h3>
+                    <ul>
+                        <li><a href="#">Контаки</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Повернення</a></li>
+                        <li><a href="#">Відстежити замовлення</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Контакти</h3>
+                    <p>8592 Ярмаркова площа вул.Таллахассі, FL 32303</p>
+                    <p>+775 378-6348</p>
+                    <p>rgarton@outlook.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Copyright Pet Shop 2024. Design by Figma.guru</p>
+            <div class="payment-icons">
+                <img src="../images/icon/Visa.ico" alt="Visa" />
+                <img src="../images/icon/ae.ico" alt="American Express" />
+                <img src="../images/icon/MasterCard.ico" alt="MasterCard" />
+                <img src="../images/icon/PayPal.ico" alt="PayPal" />
+            </div>
+        </div>
+    </footer>
+<script src="../sriptpages/scriptindex.js"></script>
+</body>
+</html>
+
+
+
+
+

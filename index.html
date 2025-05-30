@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зоомагазин</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&subset=cyrillic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contact-info">
+            <div class="contact-i">
+                <img src="images/icon/telephone.ico" alt="Phone Icon" class="icon" />
+                <span>+379 871-8371</span>
+            </div>
+            <div class="contact-it">
+                <img src="images/icon/email.ico" alt="Email Icon" class="icon" />
+                <span>rgarton@outlook.com</span>
+            </div>
+            <div class="contact-items">
+                <img src="images/icon/placeholder.ico" alt="Location Icon" class="icon" />
+                <span>8592 Ярмаркова площа вул.Таллахассі, FL 32303</span>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <div class="logo">
+                <img src="images/icon/logo.ico" alt="Paw Icon" class="logo-icon" />
+                <span class="logo-text">Pet Shop</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="../pet/pages/shop.html">Каталог</a></li>
+                <li><a href="../pet/pages/blog.html">Про нас</a></li>
+                <li><a href="../pet/pages/contact.html">Контакти</a></li>
+            </ul>
+            <div class="search-cart">
+                <div class="search">
+                    <div class="search-bar" id="searchForm">
+                        <input type="text" id="searchInput" placeholder="Пошук..." />
+                        <button type="submit" id="searchBtn">
+                        <img src="images/icon/search.ico" alt="Search Icon" class="icon" />
+                        </button>
+                    </div>
+                    <div class="white-block">
+                        <div id="results" class="result"></div>
+                    </div>
+                </div>
+
+
+                <div class="cart-icon">
+                    <a href="pages/cart.html"><img src="images/icon/cart.ico" alt="Cart" class="cart"></a>
+                    <span id="cart-count">0</span>
+                </div>
+                <div class="wishlist-ic">
+                    <a href="pages/wishlist.html"><img src="images/icon/wishlist.ico" alt="Wishlist" class="wishlist" /></a>
+                    <span id="wishlist-count">0</span>
+                </div>
+                <div class="sign">
+                    <a href="pages/registration.html"><img src="images/icon/human.ico" alt="sign" class="icon"></a>
+                </div> 
+                
+                </div>
+        </nav>
+        <div class="burger">
+            <div id="burger" class="burger-menu" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        
+        <div id="side-menu" class="menu">
+            <img src="images/icon/close.ico" alt="Close" class="close-burger" id="close-icon">
+            <div class="menu-extras">
+                <a href="pages/cart.html">
+                <div class="cart-icon">
+                    <<a href="pages/cart.html"><img src="images/icon/cart.ico" alt="Cart" class="cart"></a>
+                    <span id="cart-count">0</span>
+                </div>
+                </a>
+                <div class="sign">
+                    <a href="pages/registration.html"><img src="images/icon/human.ico" alt="Sign" class="icon"></a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="../pet/index.html">Головна</a></li>
+                <li><a href="../pet/pages/shop.html">Каталог</a></li>
+                <li><a href="../pet/pages/blog.html">Про нас</a></li>
+                <li><a href="../pet/pages/contact.html">Контакти</a></li>
+            </ul>
+            
+        </div>
+        
+    </header>
+    <section class="promo-section">
+        <img src="images/logo/pet.webp" alt="Pet Shop Promo" class="promo-image">
+        <div class="promo-content">
+            <p class="pe">Pet Shop</p>
+            <h1>Зоомагазин в якому Ви знайдете все</h1>
+            <p>Подаруйте щасливі моменти своєму улюбленцю - переходьте в наш каталог!</p>
+            <a href="#shop" class="shop-btn">Купляйте зараз</a>
+        </div>
+    </section>
+    <section class="category-section">
+        <h2 class="category-heading">Обрати категорію</h2>
+        <div class="category-container">
+            <div class="category-card">
+                <img src="images/product/shapka.webp" alt="Accessories" class="category-image" />
+                <div class="category-info">
+                    <p class="category-name">Одяг</p>
+                    <p class="product-count">84 товарів</p>
+                    
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/product/premiumdog.webp" alt="Food" class="category-image" />
+                <div class="category-info">
+                    <p class="category-name">Їжа</p>
+                    <p class="product-count">64 товарів</p>
+                    
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/product/cat_acce.webp" alt="Furniture" class="category-image" />
+                <div class="category-info">
+                    <p class="category-name">Затишок</p>
+                    <p class="product-count">22 товари</p>
+                    
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/product/bag.webp" alt="Bags" class="category-image" />
+                <div class="category-info">
+                    <p class="category-name">Сумки</p>
+                    <p class="product-count">16 товарів</p>
+                    
+                </div>
+        </div>
+       
+    </section>
+    <section class="featured-products">
+        <h2>Рекомендовані товари</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/product/dog_food1.webp" alt="Premium Dog Food" class="product-image" />
+                <div class="product-info">
+                    <p class="product-name">Преміум корм для собак</p>
+                    <p class="product-price">₴620.30</p>
+                    <button class="wishlist-btn">
+                        <img src="images/icon/wishlist.ico" alt="Add to Wishlist" class="wishlist-icon" />
+                    </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/product/cat_food1.webp" alt="Premium Cat Food" class="product-image" />
+                <div class="product-info">
+                    <p class="product-name">Преміум корм для котів</p>
+                    <p class="product-price">₴743.70</p>
+                    <button class="wishlist-btn">
+                        <img src="images/icon/wishlist.ico" alt="Add to Wishlist" class="wishlist-icon" />
+                    </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/product/dog_food2.webp" alt="Premium Dog Food" class="product-image" />
+                <div class="product-info">
+                    <p class="product-name">Преміум корм для собак</p>
+                    <p class="product-price">₴826.25</p>
+                    <button class="wishlist-btn">
+                        <img src="images/icon/wishlist.ico" alt="Add to Wishlist" class="wishlist-icon" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info-section">
+        <img src="images/logo/info_block.webp" alt="Logo">
+        <div class="promo-cont">
+            <p class="pi">Pet Shop</p>
+            <h1>Розумний вибір для покупок для Вашого улюбленця</h1>
+            <p>Шукайте найкраще для свого друга - швидко, зручно і вигідно!</p>
+            <a href="#shop" class="shp-btn">Читати більше</a>
+        </div> 
+        <div class="info-container">
+            <div class="info-card">
+                <img src="images/logo/dog1.ico" alt="Dog Icon" class="info-icon">
+                <p class="info-title">Petco</p>
+            </div>
+            <div class="info-card">
+                <img src="images/logo/dog2.ico" alt="House Icon" class="info-icon">
+                <p class="info-title">Chewy</p>
+            </div>
+            <div class="info-card">
+                <img src="images/logo/logodog.ico" alt="Heart Icon" class="info-icon">
+            </div>
+            <div class="info-card">
+                <img src="images/logo/dog3.ico" alt="Paw Icon" class="info-icon">
+                <p class="info-title">PetSmart</p>
+            </div>
+            <div class="info-card">
+                <img src="images/logo/dog4.ico" alt="Hand Heart Icon" class="info-icon">
+                <p class="info-title">Purina</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="product-gallery">
+        <h2>Найпопулярніші товари</h2>
+        <div class="product-row">
+            <div class="product-car">
+                <img src="images/product/cat_bowl.webp" alt="Product 1" class="product-ima">
+                <div class="product">
+                    <p class="product-nam">Миска для котів</p>
+                    <p class="product-pri">₴139.00</p>
+                    <button class="btn-wish">
+                        <img src="images/icon/wishlist.ico" alt="Add to Wishlist" class="co-wish" />
+                    </button>
+                </div>
+            </div>
+            <div class="product-car">
+                <img src="images/product/cat_bowl2.webp" alt="Product 2" class="product-ima">
+                <div class="product">
+                    <p class="product-nam">Миска для котів</p>
+                    <p class="product-pri">₴234.00</p>
+                    <button class="btn-wish">
+                        <img src="images/icon/wishlist.ico" alt="Add to Wishlist" class="co-wish" />
+                    </button>
+                </div>
+            </div>
+            <div class="product-car">
+                <img src="images/product/dog_leash.webp" alt="Product 3" class="product-ima">
+                <div class="product">
+                    <p class="product-nam">Повідок для собак</p>
+                    <p class="product-pri">₴250.00</p>
+                    <button class="btn-wish">
+                        <img src="images/icon/wishlist.ico" alt="Add to Wishlist" class="co-wish" />
+                    </button>
+                </div>
+            </div>
+            <div class="product-car">
+                <img src="images/product/cat_premium.webp" alt="Product 4" class="product-ima">
+                <div class="product">
+                    <p class="product-nam">Преміум корм для котів</p>
+                    <p class="product-pri">₴689.00</p>
+                    <button class="btn-wish">
+                        <img src="images/icon/wishlist.ico" alt="Add to Wishlist" class="co-wish" />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="product-row">
+            <div class="product-car">
+                <img src="images/product/dog_bowl.webp" alt="Product 5" class="product-ima">
+                <div class="product">
+                    <p class="product-nam">Миска для собак</p>
+                    <p class="product-pri">₴155.00</p>
+                    <button class="btn-wish">
+                        <img src="images/icon/wishlist.ico" alt="Add to Wishlist" class="co-wish" />
+                    </button>
+                </div>
+            </div>
+            <div class="product-car">
+                <img src="images/product/premium_dog.webp" alt="Product 6" class="product-ima">
+                <div class="product">
+                    <p class="product-nam">Преміум корм для собак</p>
+                    <p class="product-pri">₴789.00</p>
+                    <button class="btn-wish">
+                        <img src="images/icon/wishlist.ico" alt="Add to Wishlist" class="co-wish" />
+                    </button>
+                </div>
+            </div>
+            <div class="product-car">
+                <img src="images/product/dog_bed.webp" alt="Product 7" class="product-ima">
+                <div class="product">
+                    <p class="product-nam">Ліжко для собак</p>
+                    <p class="product-pri">₴1235.00</p>
+                    <button class="btn-wish">
+                        <img src="images/icon/wishlist.ico" alt="Add to Wishlist" class="co-wish" />
+                    </button>
+                </div>
+            </div>
+            <div class="product-car">
+                <img src="images/product/dog_premium.webp" alt="Product 8" class="product-ima">
+                <div class="product">
+                    <p class="product-nam">Преміум корм для собак</p>
+                    <p class="product-pri">₴567.00</p>
+                    <button class="btn-wish">
+                        <img src="images/icon/wishlist.ico" alt="Add to Wishlist" class="co-wish" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="Shop-by">
+        <h2 class="heading">Оберіть Вашого улюбленця</h2>
+        <div class="pet_by">
+            <div class="by-shop">
+                <img src="images/pet/cat.webp" alt="Cat" class="shop-pet" />
+                <div class="shop-info">
+                    <p class="name-pet">Коти</p>
+                </div>
+            </div>
+            <div class="by-shop">
+                <img src="images/pet/hamster.webp" alt="Hamster" class="shop-pet" />
+                <div class="shop-info">
+                    <p class="name-pet">Хом'яки</p>
+                </div>
+            </div>
+            <div class="by-shop">
+                <img src="images/pet/dog.webp" alt="Dog" class="shop-pet" />
+                <div class="shop-info">
+                    <p class="name-pet">Собаки</p>
+                </div>
+            </div>
+            <div class="by-shop">
+                <img src="images/pet/parrot.webp" alt="Parrot" class="shop-pet" />
+                <div class="shop-info">
+                    <p class="name-pet">Попугаї</p>
+                </div>
+            </div>
+            <div class="by-shop">
+                <img src="images/pet/rabbit.webp" alt="Rabbit" class="shop-pet" />
+                <div class="shop-info">
+                    <p class="name-pet">Кролики</p>
+                </div>
+            </div>
+            <div class="by-shop">
+                <img src="images/pet/turtle.webp" alt="Turtle" class="shop-pet" />
+                <div class="shop-info">
+                    <p class="name-pet">Черепахи</p>
+                </div>
+            </div>
+        </div>
+      
+    </section>
+    <div class="news-blog-container">
+        <h1 class="title">Новини & Блог</h1>
+        <div class="news-section">
+            <div class="news-card">
+                <div class="news-image-container">
+                    <img src="images/news/pet_news.webp" alt="News 1" class="news-image" />
+                    <div class="news-tag">Новинка</div>
+                </div>
+                <p class="news-date">15 грудня, 2024</p>
+                <p class="news-description">
+                    Веселі песики у шапках готуються до свята. Дивовижний новорічний настрій у кожній лапці!
+                </p>
+            </div>
+            <div class="news-card">
+                <div class="news-image-container">
+                    <img src="images/news/pet_news2.webp" alt="News 2" class="news-image" />
+                    <div class="news-tag">Новинка</div>
+                </div>
+                <p class="news-date">9 Грудня, 2024</p>
+                <p class="news-description">
+                    Кіт з блискучою гірляндою підкорює серця. Зимова магія від наших пухнастих друзів!
+                </p>
+            </div>
+            <div class="news-card">
+                <div class="news-image-container">
+                    <img src="images/news/pet_news3.webp" alt="News 3" class="news-image" />
+                    <div class="news-tag">Новинка</div>
+                </div>
+                <p class="news-date"> 5 Грудня, 2024</p>
+                <p class="news-description">
+                    Пухнастий помічник Миколая готує сюрпризи. Цього року буде особливе диво!
+                </p>
+            </div>
+            <div class="news-card">
+                <div class="news-image-container">
+                    <img src="images/news/new_year.webp" alt="News 3" class="news-image" />
+                    <div class="news-tag">Новинка</div>
+                </div>
+                <p class="news-date"> 10 Грудня, 2024</p>
+                <p class="news-description">
+                    Новорічні свята наближаються - магічні знижки появляються. Поспішайте!
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer style="background: url('images/logo/backround_end.webp') no-repeat center center / cover;">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/icon/logo.ico" alt="Pet Shop Logo" class="logo" />
+                <span class="logo-text">Pet Shop</span>
+                <p>Дбаємо про Ваших улюбленців та їх затишок. Обирайте їхні мрії в нашому магазині!</p>
+                <div class="social-icons">
+                    <img src="images/icon/facebook.ico" alt="Facebook" />
+                    <img src="images/icon/instagram.ico" alt="Instagram" />
+                    <img src="images/icon/Twitter.ico" alt="Twitter" />
+                    <img src="images/icon/YouTube.ico" alt="YouTube" />
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Компанія</h3>
+                    <ul>
+                        <li><a href="#about">Про нас</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Подарункові картки</a></li>
+                        <li><a href="#">Кар'єра</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Корисні посилання</h3>
+                    <ul>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Хіт продажу</a></li>
+                        <li><a href="#">Знижки</a></li>
+                        <li><a href="#">F.A.Q</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Обслуговування</h3>
+                    <ul>
+                        <li><a href="#">Контаки</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Повернення</a></li>
+                        <li><a href="#">Відстежити замовлення</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Контакти</h3>
+                    <p>8592 Ярмаркова площа вул.Таллахассі, FL 32303</p>
+                    <p>+775 378-6348</p>
+                    <p>rgarton@outlook.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Copyright Pet Shop 2024. Design by Figma.guru</p>
+            <div class="payment-icons">
+                <img src="images/icon/Visa.ico" alt="Visa" />
+                <img src="images/icon/ae.ico" alt="American Express" />
+                <img src="images/icon/MasterCard.ico" alt="MasterCard" />
+                <img src="images/icon/PayPal.ico" alt="PayPal" />
+            </div>
+        </div>
+    </footer>
+    <script src="sriptpages/scriptindex.js"></script>
+    <script src="back/back.js"></script>
+
+</body>
+</html>
+               

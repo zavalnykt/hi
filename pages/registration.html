@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="../stylepages/stylle.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Реєстрація</h2>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="first-name">Ім'я:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Прізвище:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="patronymic">По батькові:</label>
+                <input type="text" id="patronymic" name="patronymic" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Пошта:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Країна:</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+            <div class="form-group">
+                <label for="city">Місто:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <button type="submit">Зареєструватися</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="../sriptpages/script.js"></script>
+</body>
+</html>
